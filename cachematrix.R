@@ -3,7 +3,7 @@
 
 ## Write a short comment describing this function
 
-# use the matrix passed in as an argument to create a matrix object that can be cached 
+# this function caches the inverse of the matrix passed to it.
 
 makeCacheMatrix <- function(x = matrix()) {
   inv <- NULL
@@ -19,7 +19,7 @@ makeCacheMatrix <- function(x = matrix()) {
        setinverse = setinverse,
        getinverse = getinverse)
 }
-  # solve for the inverse of the matrix x if it does not already exist in the cache
+  # this function solves for the inverse of the matrix x if it does not already exist in the cache
   cacheSolve <- function(x, ...) {
     inv <- x$getinverse()
     if(!is.null(inv)) {
